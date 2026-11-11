@@ -1,0 +1,17 @@
+{
+  "name": "pan-zoom-scroll-view",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*",
+    "example"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=acchymns-rn",
+    "ios": "npm run ios --workspace=acchymns-rn",
+    "android": "npm run android --workspace=acchymns-rn",
+    "web": "npm run web --workspace=acchymns-rn",
+    "typecheck": "npm run typecheck --workspace=acchymns-rn && npm run typecheck --workspace=zoomable-view",
+    "test": "npm run test --workspace=zoomable-view"
+  }
+}
